@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Back</title>
+</head>
+<body>
+   <script>
+        function calculate(num1, num2, callback) {
+            return callback(num1, num2);
+        }
+        function add(a, b) {
+            return a + b;
+        }
+        function subtract(a, b) {
+            return a - b;
+        }
+        function multiply(a, b) {
+            return a * b;
+        }
+        function divide(a, b) {
+            return a / b;
+        }
+        console.log("Addition: " + calculate(10, 5, add));          
+        console.log("Subtraction: " + calculate(10, 5, subtract));  
+        console.log("Multiplication: " + calculate(10, 5, multiply)); 
+        console.log("Division: " + calculate(10, 5, divide));          
+   </script>
+
+</body>
+</html>
